@@ -10,9 +10,11 @@ namespace Disaheim
     {
         public double GetValueOfBook(Book book)
         {
+            Console.WriteLine("hello");
             return book.Price;
         }
 
+        
         public double GetValueOfAmulet(Amulet amulet)
         {
             if (amulet.Quality == Level.Low)
