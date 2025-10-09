@@ -12,7 +12,6 @@ namespace Disaheim
         {
             return book.Price;
         }
-
         
         public double GetValueOfAmulet(Amulet amulet)
         {
