@@ -10,7 +10,6 @@ namespace Disaheim
     {
         public double GetValueOfBook(Book book)
         {
-            Console.WriteLine("hello");
             return book.Price;
         }
 
