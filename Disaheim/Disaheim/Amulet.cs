@@ -19,7 +19,7 @@ namespace Disaheim
         {
             ItemId = itemId;
             Design = "";
-            Quality = Level.medium;
+            Quality = Level.Medium;
         }
 
         public Amulet(string itemId, Level quality)
@@ -39,7 +39,5 @@ namespace Disaheim
         {
             return $"ItemId: {ItemId}, Quality: {Quality}, Design: {Design}";
         }
-
-
     }
 }
