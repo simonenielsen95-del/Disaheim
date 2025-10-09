@@ -19,7 +19,7 @@ namespace Disaheim
                 return 12.5;
             if (amulet.Quality == Level.Medium)
                 return 20;
-            else
+            else // retunere hvis kvaliteten er høj.
                 return 27.5;
 
         }
