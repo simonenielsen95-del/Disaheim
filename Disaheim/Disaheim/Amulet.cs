@@ -7,15 +7,16 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Amulet
+    public class Amulet : Merchandise
     {
 
-        public string ItemId;        
+        
         public string Design;
         public Level Quality;
        
 
         public Amulet(string itemId)
+            //: base(itemId)
         {
             ItemId = itemId;
             Design = "";
@@ -23,6 +24,7 @@ namespace Disaheim
         }
 
         public Amulet(string itemId, Level quality)
+            //: base(itemId)
         {
             ItemId = itemId;
             Design = "";
@@ -30,6 +32,7 @@ namespace Disaheim
         }
 
         public Amulet(string itemId, Level quality, string design)
+            //: base(itemId) 
         {
             ItemId = itemId;
             Design = design;

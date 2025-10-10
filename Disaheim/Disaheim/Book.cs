@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Book
+    public class Book : Merchandise
     {
-        public string ItemId;
+       
         public string Title;
         public double Price;
  
-
         public Book(string itemId)
+            //: base(itemId)
         { 
             ItemId = itemId;
             Title = "";
             Price = 0;        
         }
         public Book(string itemId, string title)
+            //: base(itemId)
         {
             ItemId = itemId;
             Title = title;
@@ -27,6 +28,7 @@ namespace Disaheim
         }
 
         public Book(string itemId, string title, double price)
+            //: base(itemId) 
         {
             ItemId = itemId;
             Title = title;

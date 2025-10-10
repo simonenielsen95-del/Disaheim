@@ -51,6 +51,12 @@ namespace DisaheimTest
         {
             Assert.AreEqual("ItemId: 13, Quality: Low, Design: Capricorn", a3.ToString());
         }
+        /*[TestMethod]
+        public void MerchandiseConstructorWorkProperly()
+        {
+            Merchandise m = new Merchandise("100");
+            Assert.AreEqual("IteId: 100", m.ToString());
+        }*/
     }
 
 }
