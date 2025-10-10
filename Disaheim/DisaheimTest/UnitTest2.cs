@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UtilityLib;
 
 using Disaheim;
 namespace DisaheimTest
@@ -12,7 +13,7 @@ namespace DisaheimTest
     {
         Book b1, b2, b3;
         Amulet a1, a2, a3;
-        Utility utility;
+        UtilityLib.Utility utility;
 
         [TestInitialize]
         public void Init()
@@ -27,7 +28,7 @@ namespace DisaheimTest
             a2 = new Amulet("12", Level.High);
             a3 = new Amulet("13", Level.Low, "Capricorn");
 
-            utility = new Utility();
+            utility = new UtilityLib.Utility();
         }
 
         [TestMethod]
