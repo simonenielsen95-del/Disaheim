@@ -11,8 +11,8 @@ namespace Disaheim
     {
 
         
-        public string Design;
-        public Level Quality;
+        public string Design {  get; set; }
+        public Level Quality {  get; set; }
        
 
         public Amulet(string itemId)

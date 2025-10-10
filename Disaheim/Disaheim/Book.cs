@@ -8,9 +8,9 @@ namespace Disaheim
 {
     public class Book : Merchandise
     {
-       
-        public string Title;
-        public double Price;
+
+        public string Title { get; set; }
+        public double Price { get; set; }
  
         public Book(string itemId)
             //: base(itemId)

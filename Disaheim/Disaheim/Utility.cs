@@ -23,7 +23,12 @@ namespace Disaheim
                 return 27.5;
 
         }
-    }
-
-    
+        public double GetValueOfCourse(Course course)
+        {
+            if (course.DurationInMinutes % 60 == 0)
+                return (course.DurationInMinutes / 60) * 875;
+            else
+                return ((course.DurationInMinutes / 60) + 1) * 875;
+        }
+    }    
 }
