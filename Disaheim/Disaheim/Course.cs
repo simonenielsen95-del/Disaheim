@@ -18,8 +18,8 @@ namespace Disaheim
         }
 
         public Course(string name, int durationInMinutes)
+           : this(name) // Constructor chaning
         {
-            Name = name;
             DurationInMinutes = durationInMinutes;
         }
         public override string ToString()

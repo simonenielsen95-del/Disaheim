@@ -25,14 +25,16 @@ namespace Disaheim
 
         public Amulet(string itemId, Level quality)
             //: base(itemId)
+            : this(itemId)
         {
-            ItemId = itemId;
+
             Design = "";
             Quality = quality;           
         }
 
         public Amulet(string itemId, Level quality, string design)
             //: base(itemId) 
+            : this (itemId, quality)
         {
             ItemId = itemId;
             Design = design;

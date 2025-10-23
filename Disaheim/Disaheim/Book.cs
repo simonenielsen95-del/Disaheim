@@ -21,17 +21,16 @@ namespace Disaheim
         }
         public Book(string itemId, string title)
             //: base(itemId)
+            : this(itemId)
         {
-            ItemId = itemId;
             Title = title;
             Price = 0;
         }
 
         public Book(string itemId, string title, double price)
             //: base(itemId) 
+            : this(itemId, title)
         {
-            ItemId = itemId;
-            Title = title;
             Price = price;
         }
         public override string ToString()
